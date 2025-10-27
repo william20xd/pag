@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black & Milk - Peluquería Canina</title>
+    <link rel="icon" type="image/png" href="assets/img/logo2.png">
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animaciones -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- Logo imagen -->
+                <img src="assets/img/logo1.png" alt="Logo Black & Milk" class="logo-img me-2">
+                <!-- Texto: título + línea + subtítulo -->
+                <div class="logo-texts d-flex flex-column">
+                    <span class="logo-text">Black & Milk</span>
+                    <span class="logo-line"></span>
+                    <span class="logo-subtitle">Estética Canina 🐾</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="height: 80px;"></div> <!-- Espaciado por navbar fijo -->
+
+    <!-- HERO -->
+    <section id="inicio" class="hero position-relative">
+        <div class="hero-carousel-container">
+            <div id="heroCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active">
+                        <img src="assets/img/perro1.png" class="d-block w-100 h-100 hero-img" alt="Peluquería 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/perro3.png" class="d-block w-100 h-100 hero-img" alt="Peluquería 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/perro2.png" class="d-block w-100 h-100 hero-img" alt="Peluquería 3">
+                    </div>
+                </div>
+            </div>
+            <!-- Overlay para información al lado izquierdo -->
+            <div class="hero-overlay-left d-flex flex-column justify-content-center p-4 p-lg-5">
+                <h1 class="display-4 fw-bold text-white mb-3 animate__animated animate__fadeInLeft">
+                    Cuidamos a tu mascota con amor y estilo
+                </h1>
+                <p class="lead text-white mb-4 animate__animated animate__fadeInLeft animate__delay-1s">
+                    En <strong>Black & Milk</strong> tu peludo recibe el mejor cuidado, en un espacio lleno de cariño,
+                    higiene y dedicación.
+                </p>
+                <a href="#servicios"
+                    class="btn btn-light btn-lg rounded-pill px-4 animate__animated animate__fadeInLeft animate__delay-2s">
+                    Ver servicios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Imagen transparente -->
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <img src="assets/img/perro4.png" class="img-fluid" alt="Mascota feliz">
+                </div>
+
+                <!-- Texto y beneficios -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="fw-bold mb-3 text-pink">Experiencia y cariño</h2>
+                    <p class="mb-4 text-secondary">
+                        En <strong>Black & Milk</strong> cuidamos a tu mascota con amor y profesionalismo.
+                        Cada servicio está diseñado para garantizar bienestar, higiene y estilo.
+                    </p>
+                    <ul class="list-unstyled fs-5 mb-4">
+                        <li>✔ Profesionales certificados y con experiencia</li>
+                        <li>✔ Productos hipoalergénicos y seguros</li>
+                        <li>✔ Atención personalizada para cada peludo</li>
+                        <li>✔ Ambiente limpio, seguro y lleno de cariño</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5 text-pink">Nuestros Servicios</h2>
+            <div class="row g-4 justify-content-center">
+
+                <!-- Servicio básico completo -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="service-card shadow-sm p-4 rounded-4 bg-white h-100 d-flex flex-column">
+                        <img src="assets/img/basic.png" class="img-fluid rounded-4 mb-3" alt="Servicio básico completo">
+                        <h5 class="fw-bold text-pink mb-3">Servicio Básico Completo</h5>
+                        <ul class="text-start small mb-3 text-secondary">
+                            <li>Baño con productos según tipo de manto</li>
+                            <li>Corte comercial o a gusto del cliente</li>
+                            <li>Corte sanitario</li>
+                            <li>Corte de uñas</li>
+                            <li>Limpieza de ojos y oídos</li>
+                            <li>Perfumado</li>
+                        </ul>
+                        <div class="text-start small mb-3">
+                            <p class="mb-1"><strong>Tamaño mini:</strong> $15.000</p>
+                            <p class="mb-1"><strong>Pequeño:</strong> $20.000</p>
+                            <p class="mb-1"><strong>Mediano:</strong> $25.000</p>
+                            <p class="mb-1"><strong>Grande:</strong> $35.000</p>
+                            <p class="mb-2"><strong>Gigante:</strong> $45.000</p>
+                            <p class="text-muted fst-italic mt-2">*Los precios pueden variar según estado del pelaje o
+                                presencia de parásitos (+$5.000).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mantención -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-card shadow-sm p-4 rounded-4 bg-white h-100 d-flex flex-column">
+                        <img src="assets/img/mantencion.png" class="img-fluid rounded-4 mb-3" alt="Mantención">
+                        <h5 class="fw-bold text-pink mb-3">Mantención</h5>
+                        <p class="small text-secondary text-start mb-3">
+                            Se considera mantención si la próxima hora es dentro del siguiente mes.
+                        </p>
+                        <div class="text-start small">
+                            <p class="mb-1"><strong>Tamaño mini:</strong> $10.000</p>
+                            <p class="mb-1"><strong>Pequeño:</strong> $15.000</p>
+                            <p class="mb-1"><strong>Mediano:</strong> $20.000</p>
+                            <p class="mb-1"><strong>Grande:</strong> $30.000</p>
+                            <p><strong>Gigante:</strong> $40.000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extras -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card shadow-sm p-4 rounded-4 bg-white h-100 d-flex flex-column">
+                        <img src="assets/img/extra.png" class="img-fluid rounded-4 mb-3" alt="Servicios extras">
+                        <h5 class="fw-bold text-pink mb-3">Servicios Extras</h5>
+                        <ul class="text-start small text-secondary mb-0">
+                            <li>Tratamiento hidratante — <strong>$5.000</strong></li>
+                            <li>Hidratación de cojinetes — <strong>$3.000</strong></li>
+                            <li>Guardería — <strong>$10.000 por hora</strong></li>
+                            <p class="text-muted fst-italic mt-2 small">*El tiempo de guardería comienza a contar al
+                                finalizar el servicio principal.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4 text-pink" data-aos="fade-up">Galería de Peludos</h2>
+            <p class="mx-auto mb-5" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="100">
+                Mira algunos de nuestros adorables clientes disfrutando de nuestros cuidados.
+            </p>
+
+            <div id="galeriaCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-inner">
+                    <!-- Primer grupo -->
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-6 col-md-3">
+                                <img src="assets/img/1.png" class="img-fluid rounded-4 shadow-sm gallery-img"
+                                    alt="Perro 1">
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img src="assets/img/2.png" class="img-fluid rounded-4 shadow-sm gallery-img"
+                                    alt="Perro 2">
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img src="assets/img/3.png" class="img-fluid rounded-4 shadow-sm gallery-img"
+                                    alt="Perro 3">
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img src="assets/img/perro4.jpeg" class="img-fluid rounded-4 shadow-sm gallery-img"
+                                    alt="Perro 4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#galeriaCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#galeriaCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+    </section>
+
+    <!-- MODAL GALERÍA  -->
+    <div class="modal fade" id="modalGaleria" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 position-relative">
+                    <div id="galeriaModalCarousel" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner"></div>
+
+                        <!-- Controles -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#galeriaModalCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#galeriaModalCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+
+                        <!-- Indicadores tipo dots -->
+                        <div class="carousel-indicators position-absolute bottom-0 start-50 translate-middle-x mb-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Contacto -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-pink">Contacto</h5>
+                    <p class="mb-1"><i class="bi bi-geo-alt-fill me-1"></i> Alejandro Vial #8063, La Cisterna</p>
+                    <p class="mb-1"><i class="bi bi-telephone-fill me-1"></i> +56 9 1234 5678</p>
+                    <p class="mb-1"><i class="bi bi-envelope-fill me-1"></i> contacto@blackandmilk.cl</p>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-pink">Síguenos</h5>
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#" class="text-white fs-4"><i class="bi bi-tiktok"></i></a>
+                </div>
+
+                <!-- Lema -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-pink">Nuestro Lema</h5>
+                    <p class="mb-0 fst-italic">"Cuidamos a tu peludo como si fuera nuestro 🐾"</p>
+                </div>
+            </div>
+
+            <hr class="bg-pink">
+
+            <div class="text-center mt-3">
+                <p class="mb-0">© 2025 Black & Milk. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Redes sociales flotantes -->
+    <div class="social-float">
+        <a href="https://wa.me/+56922151087" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/tuusuario" target="_blank" class="social-icon instagram" title="Instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/william.andres.476439" target="_blank" class="social-icon facebook"
+            title="Facebook">
+            <i class="bi bi-facebook"></i>
+        </a>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        // Navbar scroll efecto
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Inicializa AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
+        // Cierre automático del menú al hacer clic
+        const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbarCollapse.classList.contains('show')) {
+                    new bootstrap.Collapse(navbarCollapse).toggle();
+                }
+            });
+        });
+
+        //Modal Galeria
+        // Seleccionamos todas las imágenes de la galería
+        const galleryImages = document.querySelectorAll('.gallery-img');
+        const galeriaModal = new bootstrap.Modal(document.getElementById('modalGaleria'));
+        const carouselInner = document.querySelector('#galeriaModalCarousel .carousel-inner');
+        const indicators = document.querySelector('#galeriaModalCarousel .carousel-indicators');
+        const galeriaModalCarousel = new bootstrap.Carousel(document.getElementById('galeriaModalCarousel'));
+
+        // Limpiamos por si acaso
+        carouselInner.innerHTML = '';
+        indicators.innerHTML = '';
+
+        // Creamos los items y los indicadores dinámicamente
+        galleryImages.forEach((img, index) => {
+            // Carousel item
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('carousel-item');
+            if (index === 0) itemDiv.classList.add('active');
+
+            const imgTag = document.createElement('img');
+            imgTag.src = img.src;
+            imgTag.alt = img.alt || `Imagen ${index + 1}`;
+            imgTag.classList.add('d-block', 'w-100', 'rounded-4', 'shadow-lg');
+
+            itemDiv.appendChild(imgTag);
+            carouselInner.appendChild(itemDiv);
+
+            // Indicator
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.dataset.bsTarget = '#galeriaModalCarousel';
+            button.dataset.bsSlideTo = index;
+            if (index === 0) button.classList.add('active');
+            indicators.appendChild(button);
+
+            // Click en imagen abre modal en la posición correcta
+            img.addEventListener('click', () => {
+                galeriaModal.show();
+                galeriaModalCarousel.to(index);
+            });
+        });
+
+
+
+        // Modal Hero
+        const heroImages = document.querySelectorAll('.hero-img');
+        const heroModal = new bootstrap.Modal(document.getElementById('heroModal'));
+        const heroModalCarousel = new bootstrap.Carousel(document.getElementById('heroModalCarousel'));
+
+        heroImages.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                heroModal.show();
+                heroModalCarousel.to(index);
+            });
+        });
+    </script>
+</body>
+
+</html>

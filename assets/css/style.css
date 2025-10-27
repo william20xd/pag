@@ -1,0 +1,612 @@
+/* =========================================================
+   🎨 VARIABLES DE COLOR Y FUENTES
+========================================================= */
+:root {
+    --rosa: #f8c4d0;
+    --rosa-oscuro: #e9a8b9;
+    --negro: #222;
+    --gris: #555;
+    --blanco: #fff;
+    --sombra: rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* =========================================================
+   🌐 ESTILOS GENERALES
+========================================================= */
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--negro);
+    background-color: var(--blanco);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+
+.text-pink {
+    color: var(--rosa) !important;
+}
+
+section[id] {
+    scroll-margin-top: 50px;
+    /* Ajusta según navbar */
+}
+
+/* =========================================================
+   🌫 NAVBAR GLASS
+========================================================= */
+.navbar {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px var(--sombra);
+}
+
+.nav-link {
+    color: var(--negro) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    /* solo transición de color */
+    margin: 0 5px;
+    padding: 6px 12px;
+    /* mantener padding para espaciado */
+    border-radius: 10px;
+    /* opcional, suaviza el borde al pasar el mouse */
+    background-color: transparent;
+    /* asegurar que no tenga fondo */
+}
+
+.nav-link:hover {
+    color: var(--rosa) !important;
+    /* solo cambia el color de la letra */
+    background-color: transparent;
+    /* sin recuadro rosa */
+}
+
+
+/* =========================================================
+   🐾 LOGO: BLACK & MILK
+========================================================= */
+/* Logo imagen */
+.logo-img {
+    height: 50px;
+    /* Ajusta según tu diseño */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Textos del logo */
+.logo-texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: var(--negro);
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.logo-line {
+    display: block;
+    height: 2px;
+    background-color: var(--rosa);
+    width: 100%;
+    max-width: 160px;
+    /* Ajusta al ancho deseado */
+    margin: 4px 0;
+}
+
+.logo-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.65rem;
+    color: var(--gris);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Ajustes generales del navbar-brand */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Logo imagen */
+.logo-img {
+    height: 50px;
+    /* Ajusta según tu diseño */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Asegurar que la imagen se vea en móviles */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 40px;
+        /* tamaño más pequeño en móviles */
+        display: block !important;
+        /* forzar visibilidad */
+        margin-right: 0.5rem;
+    }
+
+    /* Ajustar los textos del logo */
+    .logo-texts {
+        align-items: flex-start;
+        /* opcional: alinear a la izquierda en móviles */
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .logo-subtitle {
+        font-size: 0.55rem;
+    }
+
+    .logo-line {
+        max-width: 120px;
+        /* línea proporcional al texto */
+    }
+}
+
+/* HERO SPLIT CON CARRUSEL Y OVERLAY IZQUIERDO */
+.hero {
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-carousel-container {
+    height: 100%;
+    position: relative;
+}
+
+.hero-carousel-container .hero-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Overlay al lado izquierdo */
+.hero-overlay-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-overlay-left h1,
+.hero-overlay-left p {
+    color: #fff;
+}
+
+.hero-overlay-left .btn {
+    color: #000;
+    background-color: var(--rosa);
+    border: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-overlay-left .btn:hover {
+    background-color: var(--rosa-oscuro);
+    color: #fff;
+}
+
+/* Carrusel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    transform: scale(1.2);
+    background-color: var(--rosa);
+}
+
+@media (max-width: 992px) {
+
+    /* Hero general */
+    .hero {
+        min-height: auto;
+        /* Quitamos el 80vh */
+        height: auto;
+        padding: 0;
+        /* Eliminamos padding excesivo */
+        display: block;
+        /* Mejor para stacking vertical */
+    }
+
+    /* Overlay con texto */
+    .hero-overlay-left {
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(248, 196, 208, 0.3), transparent);
+        text-align: center;
+        padding: 1rem;
+        /* Menos espacio */
+        position: relative;
+    }
+
+    /* Texto dentro del overlay */
+    .hero-overlay-left h1,
+    .hero-overlay-left p,
+    .hero-overlay-left a.btn {
+        color: var(--negro) !important;
+    }
+
+    /* Carrusel: ocupa todo el ancho, altura automática según imagen */
+    #heroCarousel {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: auto;
+        /* Ajusta altura según imagen */
+        max-height: none;
+        border-radius: 1.5rem;
+    }
+}
+
+/* EXPERIENCIA - Fondo limpio y elegante */
+#experiencia {
+    background-color: #f8f8f8;
+    ;
+}
+
+#experiencia h2 {
+    font-size: 2rem;
+}
+
+#experiencia p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+#experiencia ul li {
+    color: var(--negro);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+#experiencia ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: var(--rosa);
+    font-weight: bold;
+}
+
+/* Imagen transparente, sin sombras ni bordes */
+#experiencia img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* mantiene proporciones */
+}
+
+
+/* =========================================================
+   📸 GALERÍA
+========================================================= */
+.gallery-img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px var(--sombra);
+}
+
+/* =========================================================
+   🦶 FOOTER
+========================================================= */
+footer {
+    background-color: var(--negro);
+    background: linear-gradient(to top, var(--negro), #1a1a1a);
+    box-shadow: inset 0 8px 20px rgba(0, 0, 0, 0.6);
+    color: var(--blanco);
+    border-top: 3px solid var(--rosa);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.95rem;
+    position: relative;
+    /* clave para el pseudo-elemento */
+    overflow: hidden;
+    /* por si el logo se sale del área */
+    padding: 3rem 0 2rem 0;
+}
+
+/* Imagen de fondo tipo marca de agua */
+footer::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    /* tamaño del logo, puedes ajustar */
+    height: 250px;
+    background: url("../img/logo2.png") no-repeat center center;
+    background-size: contain;
+    opacity: 0.05;
+    /* nivel de transparencia */
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* no interfiere con clics */
+}
+
+footer hr.bg-pink {
+    width: 60%;
+    margin: 2rem auto;
+    opacity: 0.3;
+    border-top: 2px solid var(--rosa);
+}
+
+footer h5 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+footer a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover i {
+    transform: scale(1.2);
+    color: var(--rosa);
+}
+
+
+
+
+/* =========================================================
+   🌟 REDES FLOTANTES
+========================================================= */
+.social-float {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-right: 5px;
+    /* si quieres un pequeño margen interno */
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   ✨ MODAL
+========================================================= */
+.modal-backdrop.show {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content img {
+    border-radius: 1rem;
+    max-height: 90vh;
+}
+
+/* =========================================================
+   📱 RESPONSIVE
+========================================================= */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar-brand img {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .hero .col-lg-6 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .hero-img {
+        max-height: 250px;
+    }
+
+    #heroCarousel .carousel-inner {
+        max-height: 250px;
+    }
+
+    /* Galería */
+    .gallery-img {
+        height: 180px;
+    }
+
+    /* Animaciones */
+    .animate__animated {
+        animation: none !important;
+    }
+}
+
+/* =========================================================
+   🎯 INDICADORES DOT MODAL HERO - COLORES Y CENTRADO
+========================================================= */
+#heroModalCarousel .carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    /* distancia desde la base de la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1050;
+    /* encima de la imagen */
+}
+
+#heroModalCarousel .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--rosa-oscuro);
+    /* color de dot inactivo */
+    transition: background-color 0.3s ease;
+}
+
+#heroModalCarousel .carousel-indicators .active {
+    background-color: var(--rosa);
+    /* color del dot activo */
+}
+
+/* Sobrescribimos el backdrop default de Bootstrap */
+.modal-backdrop {
+    background-color: rgba(248, 196, 208, 0.772) !important;
+    /* rosado pastel */
+}
+
+/* Para transiciones suaves al cerrar */
+.modal.fade .modal-backdrop {
+    opacity: 0 !important;
+}
+
+.modal.show .modal-backdrop {
+    opacity: 1 !important;
+    transition: opacity 0.7s ease;
+}
+
+#galeriaModalCarousel .carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    /* distancia desde la base de la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1050;
+    /* encima de la imagen */
+}
+
+#galeriaModalCarousel .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--rosa-oscuro);
+    /* color de dot inactivo */
+    transition: background-color 0.3s ease;
+}
+
+#galeriaModalCarousel .carousel-indicators .active {
+    background-color: var(--rosa);
+    /* color del dot activo */
+}
+
+/* Sección de servicios */
+#servicios {
+    background-color: #ffffff;
+    /* gris muy claro */
+}
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.text-pink {
+    color: #e9a8b9;
+}
+
+@media (max-width: 576px) {
+    .service-card img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+/* Imagen vertical */
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100%;
+    }
+
+    .card-img-top {
+        height: 250px;
+    }
+}
+
+
+/* Imágenes dentro del modal */
+#modalGaleria img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    /* evita que sobresalga del modal */
+    object-fit: contain;
+    /* mantiene proporciones sin recortar */
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* opcional: marco oscuro */
+}
